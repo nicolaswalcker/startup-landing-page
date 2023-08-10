@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
@@ -11,6 +12,8 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/image",
   ],
+
+  css: ["@/assets/css/global.css"],
 
   extends: ["nuxt-seo-kit"],
 
@@ -28,15 +31,17 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL ?? "https://example.com",
-      siteName: "Awesome Site",
+      siteName: "Figmaland - Startup",
       siteDescription: "Welcome to my awesome site!",
-      language: "pt_BR", // prefer more explicit language codes like `en-AU` over `en`
+      language: "pt-BR", // prefer more explicit language codes like `en-AU` over `en`,
     },
   },
 
-  app: {
-    rootTag: "main",
-  },
+  devtools: {
+    enabled: true,
 
-  devtools: { enabled: true },
+    timeline: {
+      enabled: true,
+    },
+  },
 });

@@ -4,6 +4,8 @@ const device = useDevice();
 <template>
   <NuxtLayout :name="device.isMobile ? 'mobile' : 'default'">
     <SeoKit />
-    <NuxtPage />
+    <main class="flex flex-col items-center justify-center gap-24 bg-bg-dark">
+      <NuxtPage />
+    </main>
   </NuxtLayout>
 </template>
