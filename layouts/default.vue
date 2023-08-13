@@ -3,7 +3,7 @@
     class="flex justify-center items-center bg-bg-dark py-2 w-full min-h-32 font-graphik min-h-[120px]"
   >
     <div
-      class="max-w-6xl w-full h-full flex items-center justify-between sm:px-4"
+      class="max-w-6xl w-full h-full flex items-center justify-between lg:px-4"
     >
       <NuxtImg src="/img/logo.png" alt="Figmaland logo" />
       <nav class="flex items-center justify-center w-auto" role="menu">
